@@ -35,7 +35,7 @@ if not public_ssh_key or public_ssh_key.strip() == "":
 # Availability Domains to cycle through
 ads = ["clzV:EU-FRANKFURT-1-AD-1", "clzV:EU-FRANKFURT-1-AD-2", "clzV:EU-FRANKFURT-1-AD-3"]
 
-total_attempts = 60 
+total_attempts = 360 
 
 for i in range(1, total_attempts + 1):
     current_ad = ads[(i - 1) % len(ads)]
